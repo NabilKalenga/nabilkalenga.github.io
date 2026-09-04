@@ -13,6 +13,7 @@
     >
 
     <meta name="author" content="Nabil Kalenga">
+
     <meta name="robots" content="index, follow">
 
     <link
@@ -26,17 +27,69 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Nabil Kalenga",
-        "url": "https://nabilkalenga.github.io/",
-        "image": "https://nabilkalenga.github.io/profile.png",
-        "jobTitle": "Creative Developer & Digital Creator",
-        "description": "Nabil Kalenga is a creative developer and digital creator building websites, digital experiences, animations and creative technology projects.",
-        "sameAs": [
-            "https://www.tiktok.com/@nabilkalenga",
-            "https://www.youtube.com/@NabilKalenga",
-            "https://www.instagram.com/nabilkalenga/",
-            "https://x.com/KalengaNabil"
+        "@graph": [
+
+            {
+                "@type": "Person",
+                "@id": "https://nabilkalenga.github.io/#person",
+                "name": "Nabil Kalenga",
+                "url": "https://nabilkalenga.github.io/",
+                "image": "https://nabilkalenga.github.io/profile.png",
+                "jobTitle": "Creative Developer & Digital Creator",
+                "description": "Nabil Kalenga is a creative developer and digital creator building websites, digital experiences, animations and creative technology projects.",
+                "sameAs": [
+                    "https://www.tiktok.com/@nabilkalenga",
+                    "https://www.youtube.com/@NabilKalenga",
+                    "https://www.instagram.com/nabilkalenga/",
+                    "https://x.com/KalengaNabil"
+                ]
+            },
+
+            {
+                "@type": "CreativeWork",
+                "name": "Digital Shield",
+                "url": "https://nabilkalenga.github.io/digital-shield/",
+                "description": "An interactive cybersecurity awareness website designed to help people recognize online dangers, spot scams, protect their information and stay safer online.",
+                "creator": {
+                    "@id": "https://nabilkalenga.github.io/#person"
+                },
+                "programmingLanguage": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
+                ]
+            },
+
+            {
+                "@type": "CreativeWork",
+                "name": "Weather App",
+                "url": "https://nabilkalenga.github.io/Weather-app/",
+                "description": "A weather application that provides users with weather information through a simple and interactive interface.",
+                "creator": {
+                    "@id": "https://nabilkalenga.github.io/#person"
+                },
+                "programmingLanguage": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
+                ]
+            },
+
+            {
+                "@type": "CreativeWork",
+                "name": "StopWatch",
+                "url": "https://nabilkalenga.github.io/StopWatch/",
+                "description": "A simple and interactive stopwatch web application built to track time with an easy-to-use interface.",
+                "creator": {
+                    "@id": "https://nabilkalenga.github.io/#person"
+                },
+                "programmingLanguage": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
+                ]
+            }
+
         ]
     }
     </script>
@@ -201,6 +254,7 @@
                 Things I've
                 <span>built.</span>
             </h2>
+
 
             <div class="projects-grid">
 
@@ -382,6 +436,7 @@
                 Follow me on social media to see my latest projects,
                 videos, experiments and creative work.
             </p>
+
 
             <div class="social-links">
 
