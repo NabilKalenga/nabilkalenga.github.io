@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- =========================
+         PRIMARY SEO
+    ========================== -->
+
     <title>Nabil Kalenga | Creative Developer & Digital Creator</title>
 
     <meta
         name="description"
-        content="Nabil Kalenga is a creative developer and digital creator building websites, digital experiences, animations and creative technology projects."
+        content="Nabil Kalenga is a creative developer and digital creator building websites, interactive experiences, animations and creative technology projects."
     >
 
     <meta name="author" content="Nabil Kalenga">
@@ -21,9 +25,19 @@
         href="https://nabilkalenga.github.io/"
     >
 
+    <!-- =========================
+         FAVICON
+    ========================== -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="profile.png"
+    >
+
 
     <!-- =========================
-         SOCIAL MEDIA PREVIEW
+         OPEN GRAPH
     ========================== -->
 
     <meta property="og:type" content="website">
@@ -35,7 +49,7 @@
 
     <meta
         property="og:description"
-        content="Explore Nabil Kalenga's portfolio of websites, digital experiences, animations and creative technology projects."
+        content="Explore Nabil Kalenga's portfolio of websites, interactive projects, animations and creative technology."
     >
 
     <meta
@@ -53,7 +67,15 @@
         content="Nabil Kalenga"
     >
 
-    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- =========================
+         X / TWITTER
+    ========================== -->
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
 
     <meta
         name="twitter:title"
@@ -62,7 +84,7 @@
 
     <meta
         name="twitter:description"
-        content="Websites, digital experiences, animation and creative technology by Nabil Kalenga."
+        content="Websites, interactive experiences, animation and creative technology by Nabil Kalenga."
     >
 
     <meta
@@ -72,22 +94,30 @@
 
 
     <!-- =========================
-         JSON-LD STRUCTURED DATA
+         STRUCTURED DATA
     ========================== -->
 
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
+
         "@graph": [
 
             {
                 "@type": "Person",
+
                 "@id": "https://nabilkalenga.github.io/#person",
+
                 "name": "Nabil Kalenga",
+
                 "url": "https://nabilkalenga.github.io/",
+
                 "image": "https://nabilkalenga.github.io/profile.png",
+
                 "jobTitle": "Creative Developer & Digital Creator",
-                "description": "Nabil Kalenga is a creative developer and digital creator building websites, digital experiences, animations and creative technology projects.",
+
+                "description": "Nabil Kalenga is a creative developer and digital creator building websites, interactive experiences, animations and creative technology projects.",
+
                 "sameAs": [
                     "https://www.tiktok.com/@nabilkalenga",
                     "https://www.youtube.com/@NabilKalenga",
@@ -96,14 +126,39 @@
                 ]
             },
 
+
+            {
+                "@type": "WebSite",
+
+                "@id": "https://nabilkalenga.github.io/#website",
+
+                "url": "https://nabilkalenga.github.io/",
+
+                "name": "Nabil Kalenga",
+
+                "description": "Official portfolio of Nabil Kalenga, a creative developer and digital creator.",
+
+                "publisher": {
+                    "@id": "https://nabilkalenga.github.io/#person"
+                }
+            },
+
+
             {
                 "@type": "CreativeWork",
+
+                "@id": "https://nabilkalenga.github.io/#digital-shield",
+
                 "name": "Digital Shield",
+
                 "url": "https://nabilkalenga.github.io/digital-shield/",
+
                 "description": "An interactive cybersecurity awareness website designed to help people recognize online dangers, spot scams, protect their information and stay safer online.",
+
                 "creator": {
                     "@id": "https://nabilkalenga.github.io/#person"
                 },
+
                 "programmingLanguage": [
                     "HTML",
                     "CSS",
@@ -111,14 +166,22 @@
                 ]
             },
 
+
             {
                 "@type": "CreativeWork",
+
+                "@id": "https://nabilkalenga.github.io/#weather-app",
+
                 "name": "Weather App",
+
                 "url": "https://nabilkalenga.github.io/Weather-app/",
-                "description": "A weather application that provides users with weather information through a simple and interactive interface.",
+
+                "description": "An interactive weather application built with HTML, CSS and JavaScript.",
+
                 "creator": {
                     "@id": "https://nabilkalenga.github.io/#person"
                 },
+
                 "programmingLanguage": [
                     "HTML",
                     "CSS",
@@ -126,14 +189,22 @@
                 ]
             },
 
+
             {
                 "@type": "CreativeWork",
+
+                "@id": "https://nabilkalenga.github.io/#stopwatch",
+
                 "name": "StopWatch",
+
                 "url": "https://nabilkalenga.github.io/StopWatch/",
-                "description": "A simple and interactive stopwatch web application built to track time with an easy-to-use interface.",
+
+                "description": "An interactive stopwatch web application built with HTML, CSS and JavaScript.",
+
                 "creator": {
                     "@id": "https://nabilkalenga.github.io/#person"
                 },
+
                 "programmingLanguage": [
                     "HTML",
                     "CSS",
@@ -146,6 +217,10 @@
     </script>
 
 
+    <!-- =========================
+         STYLESHEET
+    ========================== -->
+
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -153,26 +228,52 @@
 
 <body>
 
+
     <!-- =========================
          NAVIGATION
     ========================== -->
 
     <header class="navbar">
 
-        <div class="logo">
+        <a
+            href="#home"
+            class="logo"
+            aria-label="Nabil Kalenga home"
+        >
             NK<span>.</span>
-        </div>
+        </a>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#socials">Channels</a>
-            <a href="#contact">Contact</a>
+
+        <nav aria-label="Main navigation">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a href="#skills">
+                Skills
+            </a>
+
+            <a href="#socials">
+                Channels
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
         </nav>
 
     </header>
+
 
 
     <!-- =========================
@@ -186,7 +287,10 @@
              HERO
         ========================== -->
 
-        <section id="home" class="hero">
+        <section
+            id="home"
+            class="hero"
+        >
 
             <div class="hero-content">
 
@@ -194,23 +298,41 @@
                     WELCOME TO MY PORTFOLIO
                 </p>
 
+
                 <h1>
-                    I'm <span>Nabil</span><br>
+
+                    I'm
+                    <span>Nabil</span>
+
+                    <br>
+
                     Creative Developer.
+
                 </h1>
 
+
                 <p class="hero-text">
-                    I build websites, digital experiences, animations
-                    and creative projects with technology.
+
+                    I build websites, digital experiences,
+                    animations and creative technology projects.
+
                 </p>
+
 
                 <div class="hero-buttons">
 
-                    <a href="#projects" class="btn primary">
+                    <a
+                        href="#projects"
+                        class="btn primary"
+                    >
                         View My Work
                     </a>
 
-                    <a href="#contact" class="btn secondary">
+
+                    <a
+                        href="#contact"
+                        class="btn secondary"
+                    >
                         Contact Me
                     </a>
 
@@ -219,23 +341,30 @@
             </div>
 
 
-            <!-- PROFILE PHOTO -->
+
+            <!-- PROFILE -->
 
             <div class="hero-visual">
 
                 <div class="photo-glow"></div>
 
+
                 <div class="profile-frame">
 
                     <img
                         src="profile.png"
-                        alt="Nabil Kalenga - Creative Developer"
+                        alt="Nabil Kalenga, creative developer and digital creator"
+                        width="500"
+                        height="500"
                     >
 
                 </div>
 
+
                 <div class="floating-tag">
+
                     &lt; CREATOR /&gt;
+
                 </div>
 
             </div>
@@ -243,32 +372,44 @@
         </section>
 
 
+
         <!-- =========================
              ABOUT
         ========================== -->
 
-        <section id="about" class="section">
+        <section
+            id="about"
+            class="section"
+        >
 
             <p class="section-label">
                 01 — ABOUT
             </p>
 
+
             <h2>
+
                 Turning ideas into
                 <span>digital experiences.</span>
+
             </h2>
 
+
             <p class="section-text">
-                I'm Nabil Kalenga, a creative developer and digital creator
-                who enjoys building websites, experimenting with technology,
-                creating animations and bringing new ideas to life.
+
+                I'm Nabil Kalenga, a creative developer and
+                digital creator who enjoys building websites,
+                experimenting with technology, creating
+                animations and bringing new ideas to life.
+
             </p>
 
         </section>
 
 
+
         <!-- =========================
-             SEO / ABOUT NABIL KALENGA
+             ABOUT NABIL KALENGA
         ========================== -->
 
         <section class="section seo-section">
@@ -277,51 +418,77 @@
                 ABOUT NABIL KALENGA
             </p>
 
+
             <h2>
-                Meet <span>Nabil Kalenga.</span>
+
+                Meet
+                <span>Nabil Kalenga.</span>
+
             </h2>
 
-            <p class="section-text">
-                Nabil Kalenga is a creative developer and digital creator
-                passionate about web development, creative technology,
-                animation, video editing and digital experiences.
-            </p>
 
             <p class="section-text">
-                Through this portfolio, Nabil Kalenga showcases websites,
-                interactive projects, creative experiments and digital work
-                built using technologies such as HTML, CSS and JavaScript.
+
+                Nabil Kalenga is a creative developer and
+                digital creator passionate about web development,
+                creative technology, animation, video editing
+                and digital experiences.
+
             </p>
 
+
             <p class="section-text">
-                Explore Nabil Kalenga's projects, skills and creative work,
-                and follow his journey as he continues learning, building
-                and experimenting with technology.
+
+                Through this portfolio, Nabil Kalenga showcases
+                websites, interactive projects, creative experiments
+                and digital work built using technologies such as
+                HTML, CSS and JavaScript.
+
+            </p>
+
+
+            <p class="section-text">
+
+                Explore Nabil Kalenga's projects, skills and
+                creative work, and follow his journey as he
+                continues learning, building and experimenting
+                with technology.
+
             </p>
 
         </section>
+
 
 
         <!-- =========================
              PROJECTS
         ========================== -->
 
-        <section id="projects" class="section">
+        <section
+            id="projects"
+            class="section"
+        >
 
             <p class="section-label">
                 02 — PROJECTS
             </p>
 
+
             <h2>
+
                 Things I've
                 <span>built.</span>
+
             </h2>
+
 
 
             <div class="projects-grid">
 
 
-                <!-- PROJECT 01 — DIGITAL SHIELD -->
+                <!-- =====================
+                     DIGITAL SHIELD
+                ====================== -->
 
                 <article class="project-card">
 
@@ -329,26 +496,43 @@
                         01
                     </div>
 
+
                     <div class="project-icon">
                         🛡️
                     </div>
+
 
                     <h3>
                         Digital Shield
                     </h3>
 
+
                     <p>
-                        An interactive cybersecurity awareness website
-                        designed to help people recognize online dangers,
-                        spot scams, protect their information and stay
-                        safer online.
+
+                        An interactive cybersecurity awareness
+                        website designed to help people recognize
+                        online dangers, spot scams, protect their
+                        information and stay safer online.
+
                     </p>
 
+
                     <div class="project-tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+
+                        <span>
+                            HTML
+                        </span>
+
+                        <span>
+                            CSS
+                        </span>
+
+                        <span>
+                            JavaScript
+                        </span>
+
                     </div>
+
 
                     <div class="project-links">
 
@@ -356,8 +540,9 @@
                             href="https://nabilkalenga.github.io/digital-shield/"
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label="View Digital Shield project"
                         >
-                            Live Demo →
+                            View Digital Shield →
                         </a>
 
                     </div>
@@ -365,7 +550,10 @@
                 </article>
 
 
-                <!-- PROJECT 02 — WEATHER APP -->
+
+                <!-- =====================
+                     WEATHER APP
+                ====================== -->
 
                 <article class="project-card">
 
@@ -373,25 +561,42 @@
                         02
                     </div>
 
+
                     <div class="project-icon">
                         🌦️
                     </div>
+
 
                     <h3>
                         Weather App
                     </h3>
 
+
                     <p>
-                        A weather application that provides users with
-                        weather information through a simple and
-                        interactive interface.
+
+                        An interactive weather application
+                        designed to provide weather information
+                        through a simple and easy-to-use interface.
+
                     </p>
 
+
                     <div class="project-tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+
+                        <span>
+                            HTML
+                        </span>
+
+                        <span>
+                            CSS
+                        </span>
+
+                        <span>
+                            JavaScript
+                        </span>
+
                     </div>
+
 
                     <div class="project-links">
 
@@ -399,8 +604,9 @@
                             href="https://nabilkalenga.github.io/Weather-app/"
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label="View Weather App project"
                         >
-                            Live Demo →
+                            View Weather App →
                         </a>
 
                     </div>
@@ -408,7 +614,10 @@
                 </article>
 
 
-                <!-- PROJECT 03 — STOPWATCH -->
+
+                <!-- =====================
+                     STOPWATCH
+                ====================== -->
 
                 <article class="project-card">
 
@@ -416,24 +625,42 @@
                         03
                     </div>
 
+
                     <div class="project-icon">
                         ⏱️
                     </div>
+
 
                     <h3>
                         StopWatch
                     </h3>
 
+
                     <p>
-                        A simple and interactive stopwatch web application
-                        built to track time with an easy-to-use interface.
+
+                        A simple and interactive stopwatch
+                        web application built to track time
+                        with an easy-to-use interface.
+
                     </p>
 
+
                     <div class="project-tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+
+                        <span>
+                            HTML
+                        </span>
+
+                        <span>
+                            CSS
+                        </span>
+
+                        <span>
+                            JavaScript
+                        </span>
+
                     </div>
+
 
                     <div class="project-links">
 
@@ -441,113 +668,153 @@
                             href="https://nabilkalenga.github.io/StopWatch/"
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label="View StopWatch project"
                         >
-                            Live Demo →
+                            View StopWatch →
                         </a>
 
                     </div>
 
                 </article>
 
+
             </div>
 
         </section>
+
 
 
         <!-- =========================
              SKILLS
         ========================== -->
 
-        <section id="skills" class="section">
+        <section
+            id="skills"
+            class="section"
+        >
 
             <p class="section-label">
                 03 — SKILLS
             </p>
 
+
             <h2>
+
                 What I
                 <span>work with.</span>
+
             </h2>
+
 
             <div class="skills">
 
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>JavaScript</div>
-                <div>Git &amp; GitHub</div>
-                <div>Animation</div>
-                <div>Video Editing</div>
-                <div>Creative Technology</div>
-                <div>AI Tools</div>
+                <div>
+                    HTML
+                </div>
+
+                <div>
+                    CSS
+                </div>
+
+                <div>
+                    JavaScript
+                </div>
+
+                <div>
+                    Git &amp; GitHub
+                </div>
+
+                <div>
+                    Animation
+                </div>
+
+                <div>
+                    Video Editing
+                </div>
+
+                <div>
+                    Creative Technology
+                </div>
+
+                <div>
+                    AI Tools
+                </div>
 
             </div>
 
         </section>
 
 
+
         <!-- =========================
-             SOCIAL / CHANNELS
+             SOCIAL CHANNELS
         ========================== -->
 
-        <section id="socials" class="section">
+        <section
+            id="socials"
+            class="section"
+        >
 
             <p class="section-label">
                 04 — CHANNELS
             </p>
 
+
             <h2>
+
                 Follow my
                 <span>creative journey.</span>
+
             </h2>
 
+
             <p class="section-text">
-                Follow me on social media to see my latest projects,
-                videos, experiments and creative work.
+
+                Follow Nabil Kalenga on social media
+                to see projects, videos, experiments
+                and creative work.
+
             </p>
 
 
             <div class="social-links">
 
 
-                <!-- TIKTOK -->
-
                 <a
                     href="https://www.tiktok.com/@nabilkalenga"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Nabil Kalenga on TikTok"
                 >
                     🎵 TikTok
                 </a>
 
 
-                <!-- YOUTUBE -->
-
                 <a
                     href="https://www.youtube.com/@NabilKalenga"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Nabil Kalenga on YouTube"
                 >
                     ▶️ YouTube
                 </a>
 
 
-                <!-- INSTAGRAM -->
-
                 <a
                     href="https://www.instagram.com/nabilkalenga/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Nabil Kalenga on Instagram"
                 >
                     📸 Instagram
                 </a>
 
 
-                <!-- X -->
-
                 <a
                     href="https://x.com/KalengaNabil"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Nabil Kalenga on X"
                 >
                     𝕏 X
                 </a>
@@ -557,25 +824,36 @@
         </section>
 
 
+
         <!-- =========================
              CONTACT
         ========================== -->
 
-        <section id="contact" class="section contact">
+        <section
+            id="contact"
+            class="section contact"
+        >
 
             <p class="section-label">
                 05 — CONTACT
             </p>
 
+
             <h2>
+
                 Let's create something
                 <span>great.</span>
+
             </h2>
 
+
             <p class="section-text">
-                Have an idea, project or collaboration in mind?
-                Let's connect.
+
+                Have an idea, project or collaboration
+                in mind? Let's connect.
+
             </p>
+
 
             <a
                 href="mailto:bilkalenga2010@gmail.com"
@@ -589,6 +867,7 @@
     </main>
 
 
+
     <!-- =========================
          FOOTER
     ========================== -->
@@ -596,10 +875,46 @@
     <footer>
 
         <p>
-            © 2026 Nabil Kalenga. Built with creativity.
+
+            © 2026
+            <a href="https://nabilkalenga.github.io/">
+                Nabil Kalenga
+            </a>.
+            Built with creativity.
+
+        </p>
+
+
+        <p>
+
+            Projects:
+            
+            <a
+                href="https://nabilkalenga.github.io/digital-shield/"
+            >
+                Digital Shield
+            </a>
+
+            ·
+
+            <a
+                href="https://nabilkalenga.github.io/Weather-app/"
+            >
+                Weather App
+            </a>
+
+            ·
+
+            <a
+                href="https://nabilkalenga.github.io/StopWatch/"
+            >
+                StopWatch
+            </a>
+
         </p>
 
     </footer>
+
 
 
     <!-- =========================
