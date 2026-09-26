@@ -47,11 +47,17 @@ body {
 }
 
 
-/* LOGO */
+/* ================================
+   LOGO
+================================ */
 
 .logo {
+    color: #f5f7ff;
+    text-decoration: none;
+
     font-size: 28px;
     font-weight: 800;
+
     letter-spacing: -2px;
 }
 
@@ -60,7 +66,9 @@ body {
 }
 
 
-/* NAV LINKS */
+/* ================================
+   NAVIGATION
+================================ */
 
 nav {
     display: flex;
@@ -124,9 +132,6 @@ nav a:hover::after {
     position: relative;
 }
 
-
-/* HERO GLOW */
-
 .hero::before {
     content: "";
 
@@ -148,9 +153,6 @@ nav a:hover::after {
 
     pointer-events: none;
 }
-
-
-/* SECOND HERO GLOW */
 
 .hero::after {
     content: "";
@@ -175,7 +177,9 @@ nav a:hover::after {
 }
 
 
-/* HERO CONTENT */
+/* ================================
+   HERO CONTENT
+================================ */
 
 .hero-content {
     max-width: 700px;
@@ -184,9 +188,6 @@ nav a:hover::after {
 
     z-index: 2;
 }
-
-
-/* EYEBROW */
 
 .eyebrow,
 .section-label {
@@ -200,9 +201,6 @@ nav a:hover::after {
 
     margin-bottom: 20px;
 }
-
-
-/* HERO TITLE */
 
 .hero h1 {
     font-size: clamp(50px, 7vw, 92px);
@@ -218,9 +216,6 @@ nav a:hover::after {
 .section h2 span {
     color: #8178ff;
 }
-
-
-/* HERO DESCRIPTION */
 
 .hero-text,
 .section-text {
@@ -260,9 +255,6 @@ nav a:hover::after {
     transition: 0.3s;
 }
 
-
-/* PRIMARY BUTTON */
-
 .primary {
     background: #6c63ff;
 
@@ -278,9 +270,6 @@ nav a:hover::after {
     box-shadow:
         0 15px 35px rgba(108, 99, 255, 0.3);
 }
-
-
-/* SECONDARY BUTTON */
 
 .secondary {
     border: 1px solid #303644;
@@ -300,7 +289,7 @@ nav a:hover::after {
 
 
 /* ================================
-   PROFILE PHOTO
+   PROFILE
 ================================ */
 
 .hero-visual {
@@ -312,16 +301,12 @@ nav a:hover::after {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     flex-shrink: 0;
 
     z-index: 2;
 }
-
-
-/* PURPLE GLOW */
 
 .photo-glow {
     position: absolute;
@@ -339,9 +324,6 @@ nav a:hover::after {
 
     animation: pulseGlow 4s ease-in-out infinite;
 }
-
-
-/* PHOTO FRAME */
 
 .profile-frame {
     position: relative;
@@ -371,9 +353,6 @@ nav a:hover::after {
     overflow: hidden;
 }
 
-
-/* PHOTO FRAME BORDER */
-
 .profile-frame::before {
     content: "";
 
@@ -390,9 +369,6 @@ nav a:hover::after {
     z-index: 3;
 }
 
-
-/* ACTUAL IMAGE */
-
 .profile-frame img {
     width: 100%;
     height: 100%;
@@ -405,9 +381,6 @@ nav a:hover::after {
 
     border-radius: 18px;
 }
-
-
-/* FLOATING CREATOR TAG */
 
 .floating-tag {
     position: absolute;
@@ -438,7 +411,7 @@ nav a:hover::after {
 
 
 /* ================================
-   PHOTO ANIMATIONS
+   ANIMATIONS
 ================================ */
 
 @keyframes profileFloat {
@@ -453,19 +426,16 @@ nav a:hover::after {
     }
 }
 
-
 @keyframes pulseGlow {
 
     0%,
     100% {
         transform: scale(1);
-
         opacity: 0.20;
     }
 
     50% {
         transform: scale(1.15);
-
         opacity: 0.32;
     }
 }
@@ -509,10 +479,12 @@ nav a:hover::after {
 }
 
 
-/* PROJECT CARD */
+/* ================================
+   PROJECT CARD
+================================ */
 
 .project-card {
-    min-height: 280px;
+    min-height: 330px;
 
     padding: 30px;
 
@@ -531,10 +503,10 @@ nav a:hover::after {
         transform 0.35s,
         border-color 0.35s,
         box-shadow 0.35s;
+
+    display: flex;
+    flex-direction: column;
 }
-
-
-/* PROJECT HOVER */
 
 .project-card:hover {
     transform: translateY(-8px);
@@ -553,7 +525,7 @@ nav a:hover::after {
 
     font-family: monospace;
 
-    margin-bottom: 60px;
+    margin-bottom: 35px;
 }
 
 
@@ -594,6 +566,8 @@ nav a:hover::after {
     flex-wrap: wrap;
 
     gap: 8px;
+
+    margin-top: auto;
 
     margin-bottom: 25px;
 }
@@ -675,7 +649,7 @@ nav a:hover::after {
 
 
 /* ================================
-   SOCIAL / CHANNELS
+   SOCIAL CHANNELS
 ================================ */
 
 .social-links {
@@ -688,14 +662,10 @@ nav a:hover::after {
     margin-top: 40px;
 }
 
-
-/* SOCIAL BUTTON */
-
 .social-links a {
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 10px;
@@ -728,9 +698,6 @@ nav a:hover::after {
         color 0.3s,
         box-shadow 0.3s;
 }
-
-
-/* SOCIAL HOVER */
 
 .social-links a:hover {
     transform: translateY(-5px);
@@ -771,14 +738,28 @@ footer {
     color: #62697a;
 
     border-top: 1px solid #181c27;
+
+    line-height: 2;
+}
+
+footer a {
+    color: #8178ff;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: white;
 }
 
 
 /* ================================
-   MOBILE
+   TABLETS
 ================================ */
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 
     .hero {
         gap: 30px;
